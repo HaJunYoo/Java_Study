@@ -29,6 +29,28 @@ public class Numbers {
         System.out.println(Double.MAX_VALUE);
         System.out.println(Double.MIN_VALUE);
         // 모든 number type의 default value는 0(또는 0.0) 입니다.
+
+        System.out.println("----------default-----------");
+
+        Defaults defaults = new Defaults();
+        System.out.println(defaults.shortDefault);
+        System.out.println(defaults.intDefault);
+
+        System.out.println("====char======");
+
+        char alphabet = 'A'; // 문자형 변수 선언
+        System.out.println(alphabet);
+        char defaultValue ;
+        // 값을 할당하지 않고 선언만 하면, default 값은 '\u0000' (null character) 입니다.
+        // System.out.println(defaultValue);
+
+
+    }
+
+
+    static class Defaults {
+        short shortDefault;
+        int intDefault;
     }
 
 }
